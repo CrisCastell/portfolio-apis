@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('APIS_SECRET_KEY') #'4zwg+j7-bxe)xuhrdc1*!g-y6br$4c051^#$2k2$fg0#w(1*ji'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = (os.environ.get('DEBUG_VALUE') == 'True')
+DEBUG = (os.environ.get('DEBUG_VALUE') != 'True')
 
 ALLOWED_HOSTS = ['cristiamportfolioapis.herokuapp.com']
 
